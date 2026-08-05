@@ -22,4 +22,14 @@ public class Usuario {
         // TODO: Adicionar o vídeo na lista de histórico
     }
     // TODO: Gerar Getters, Setters, equals(), hashCode() e toString()
+
+    public void setNome(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setNome'");
+    }
+
+    public void setEmail(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setEmail'");
+    }
 }
