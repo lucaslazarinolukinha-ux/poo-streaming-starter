@@ -9,7 +9,7 @@ import java.time.LocalDate;
 public class MainTeste {
     public static void main(String[] args) {
         System.out.println("===Sistema de Streaming===");
-        Usuario usuario = new Usuario("joao@example.com", "João");
+        Usuario usuario = new Usuario();
         System.out.println("Usuário criado: " + usuario.getNome());
 
         Categoria categoria = new Categoria("Ação", 16);
@@ -17,9 +17,9 @@ public class MainTeste {
         video.setCategoria(categoria);
         usuario.assistirVideo(video);
 
-        System.out.println("Último vídeo assistido: " + usuario.getHistoricoAssistidos().get(0));
+        System.out.println("Último vídeo assistido: " + usuario.getHistoricoAssistidos());
 
-        CartaodeCredito cartao = new CartaodeCredito("1111-2222-3333-4444", new BigDecimal("5000"));
+        CartaodeCredito cartao = new CartaodeCredito();
         Assinatura assinatura = new Assinatura(LocalDate.now(), new BigDecimal("29.90"));
         assinatura.setCartao(cartao);
         assinatura.setUsuario(usuario);

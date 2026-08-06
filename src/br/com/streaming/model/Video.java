@@ -11,4 +11,9 @@ public class Video {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
     // TODO: Gerar Getters, Setters, equals(), hashCode() e toString()
+
+    public void setCategoria(Categoria categoria) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setCategoria'");
+    }
 }

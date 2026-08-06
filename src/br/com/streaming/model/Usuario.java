@@ -1,5 +1,7 @@
 package br.com.streaming.model;
 
+import java.time.LocalDate;
+
 // TODO: Importar List e ArrayList
 
 public class Usuario {
@@ -11,25 +13,40 @@ public class Usuario {
     private boolean ativo;
     // TODO: Associação 1..* - Criar Lista de Videos (historicoAssistidos)
 
-    public Usuario(String email, String nome) {
-        this.email = email;
-        this.nome = nome;
-        this.ativo = true;
-        // TODO: Instanciar a lista de vídeos e incrementar o contador
-    }
-
     public void assistirVideo(Video v) {
         // TODO: Adicionar o vídeo na lista de histórico
     }
     // TODO: Gerar Getters, Setters, equals(), hashCode() e toString()
 
-    public void setNome(String string) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setNome'");
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmail(String string) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setEmail'");
+    public void setEmail(String email) {
+        this.email = email;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public boolean isAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(boolean ativo) {
+        this.ativo = ativo;
+    }
+
+    public LocalDate getHistoricoAssistidos() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getHistoricoAssistidos'");
+    }
+
+
+
 }
